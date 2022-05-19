@@ -21,5 +21,7 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need your location to save where you parked your car (and share with Facebook lol)</string>
 </dict>
 </plist>
