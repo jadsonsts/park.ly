@@ -20,10 +20,10 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cvo-SO-XYI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park.ly-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rjq-Ih-UMy">
-                                <rect key="frame" x="20" y="64" width="374" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="park.ly-logo" translatesAutoresizingMaskIntoConstraints="NO" id="rjq-Ih-UMy">
+                                <rect key="frame" x="20" y="64" width="374" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="eF6-ak-yz1"/>
+                                    <constraint firstAttribute="height" constant="70" id="eF6-ak-yz1"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A88-fz-L9y">
@@ -42,6 +42,9 @@
                                             <imageReference key="image" image="location" catalog="system" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetMapCenterWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mRr-Ca-rC6"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpk-H5-hUQ" customClass="RoundButton" customModule="park_ly" customModuleProvider="target">
                                         <rect key="frame" x="58" y="0.0" width="75" height="75"/>
@@ -52,6 +55,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="parkCar"/>
+                                        <connections>
+                                            <action selector="parkBtnTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="baI-jQ-N6b"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inr-Fy-ODP" customClass="RoundButton" customModule="park_ly" customModuleProvider="target">
                                         <rect key="frame" x="141" y="12.5" width="50" height="50"/>
@@ -66,6 +72,9 @@
                                             <imageReference key="image" image="car" catalog="system" symbolScale="large"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="semibold"/>
                                         </state>
+                                        <connections>
+                                            <action selector="getDirectionsTappedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hWZ-Ba-B2U"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -84,6 +93,11 @@
                             <constraint firstItem="rjq-Ih-UMy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="wvJ-Ny-ieQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="directionButton" destination="inr-Fy-ODP" id="bIc-rj-Xw6"/>
+                        <outlet property="mapView" destination="Cvo-SO-XYI" id="YJO-df-yTM"/>
+                        <outlet property="parkButton" destination="Xpk-H5-hUQ" id="yS8-M7-wS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

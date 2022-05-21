@@ -15,6 +15,7 @@
 		DFF599AC2836463500C37FFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFF599AA2836463500C37FFD /* LaunchScreen.storyboard */; };
 		DFF599B728364A1F00C37FFD /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF599B628364A1F00C37FFD /* RoundButton.swift */; };
 		DFF599BA28364ED400C37FFD /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF599B928364ED400C37FFD /* LocationService.swift */; };
+		DFF599BC283876E800C37FFD /* ParkingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF599BB283876E800C37FFD /* ParkingSpot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		DFF599AD2836463500C37FFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFF599B628364A1F00C37FFD /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		DFF599B928364ED400C37FFD /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		DFF599BB283876E800C37FFD /* ParkingSpot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSpot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		DFF599B5283649F500C37FFD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DFF599BB283876E800C37FFD /* ParkingSpot.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			files = (
 				DFF599B728364A1F00C37FFD /* RoundButton.swift in Sources */,
 				DFF599A42836463200C37FFD /* ViewController.swift in Sources */,
+				DFF599BC283876E800C37FFD /* ParkingSpot.swift in Sources */,
 				DFF599BA28364ED400C37FFD /* LocationService.swift in Sources */,
 				DFF599A02836463200C37FFD /* AppDelegate.swift in Sources */,
 				DFF599A22836463200C37FFD /* SceneDelegate.swift in Sources */,
@@ -335,6 +339,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +368,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
